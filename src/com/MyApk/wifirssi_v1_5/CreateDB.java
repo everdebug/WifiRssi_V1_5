@@ -35,7 +35,6 @@ public class CreateDB extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		this.setContentView(R.layout.createdb);
 		ExitApp.getInstance().addActivity(this);
@@ -43,7 +42,6 @@ public class CreateDB extends Activity {
 		buttonback.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				// TODO Auto-generated method stub
 				if (j > 0) {
 					Intent intent = new Intent();
 					intent.setClass(CreateDB.this, MainActivity.class);

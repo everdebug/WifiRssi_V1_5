@@ -21,25 +21,21 @@ public class MyDB extends SQLiteOpenHelper {
 
 	public MyDB(Context context) {
 		super(context, DB_NAME, null, DB_VERSION);
-		// TODO Auto-generated constructor stub
 		database = getWritableDatabase();
 	}
 
 	@Override
 	public void onCreate(SQLiteDatabase db) {
-		// TODO Auto-generated method stub
 
 	}
 
 	@Override
 	public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-		// TODO Auto-generated method stub
 
 	}
 
 	@Override
 	public void onOpen(SQLiteDatabase db) {
-		// TODO Auto-generated method stub
 		super.onOpen(db);
 	}
 
@@ -116,7 +112,6 @@ public class MyDB extends SQLiteOpenHelper {
 			openConnection();
 			database.execSQL(deleteTableSQL);// DROP TABLE MyTable
 		} catch (Exception e) {
-			// TODO: handle exception
 			e.printStackTrace();
 			return false;
 		} finally {

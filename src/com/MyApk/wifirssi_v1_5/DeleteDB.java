@@ -40,7 +40,6 @@ public class DeleteDB extends ListActivity {
 
 			@Override
 			public void onClick(View v) {
-				// TODO Auto-generated method stub
 				Intent intent = new Intent();
 				intent.setClass(DeleteDB.this, MainActivity.class);
 				intent.putExtra("Tablename", chooseTable);

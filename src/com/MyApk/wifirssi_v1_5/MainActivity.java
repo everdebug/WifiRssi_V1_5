@@ -51,15 +51,6 @@ public class MainActivity extends Activity {
 		}
 	};
 
-	// 创建数据库
-
-
-	// try {
-	// mMyDbDatabase.execSQL(sqlString);
-	// } catch (Exception e) {
-	// System.err.println(e.toString());
-	// // TODO: handle exception
-	// }//运行SQL语句
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
